@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Library</title>
+    <link rel="stylesheet" href="https://classless.de/classless.css">
+</head>
+<body>
+    <h1>
+        Home Library
+    </h1>
+    <p>
+        Welcome to your personal library.
+    </p>
+    <a href='/add'>
+        <button style='width: 500px;'>
+            Add A Book
+        </button>
+    </a>
+    {% if books %}
+    
+    {% else %}
+    <p>
+        You have no books in your library.
+    </p>
+    {% endif %}
+</body>
+</html>
