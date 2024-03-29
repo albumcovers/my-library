@@ -14,11 +14,12 @@
     <h3>
         Are you looking for <b>{{ title }}</b> by <b>{{ author }}</b>?
     </h3>
-    <button>
-        Yes
-    </button>
-    <button>
-        No, go back
-    </button>
+    <form action='/book-add' method='post'>
+        <input name='isbn' value="{{ isbn }}" style='display:none;'>
+        <input type='submit' value='Yes'>
+    </form>
+    <a href='/add'>
+        <input type='submit' value='No, go back'>
+    </a>
 </body>
 </html>

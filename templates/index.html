@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Library</title>
     <link rel="stylesheet" href="https://classless.de/classless.css">
+    <style> .flex {display: flex; gap: 10px; align-items: center; } img { width: 150px; } </style>
 </head>
 <body>
     <h1>
@@ -19,7 +20,21 @@
         </button>
     </a>
     {% if books %}
-    
+        {% for book in books %}
+            <div class='flex'>
+                <div class='cover'>
+                    <img src='{{ book["image_link"] }}'>
+                </div>
+                <div class='info'>
+                    <h1>
+                        {{ book['title'] }}
+                    </h1>
+                    <h3>
+                        {{ book['Author'] }}
+                    </h3>
+                </div>
+            </div>
+        {% endfor %}
     {% else %}
     <p>
         You have no books in your library.
