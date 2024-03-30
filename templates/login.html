@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | My Library</title>
+    <link rel="stylesheet" href="https://classless.de/classless.css">
+    <style> .flex {display: flex; gap: 20px; align-items: center; } img { width: 150px; } a { color: inherit; text-decoration: none; } </style>
+</head>
+<body>
+    <h1>
+        You aren't logged in. 
+    </h1>
+    <p>
+        Choose an easy to remember name. Don't put "bob's library", put something like "bob".
+        <form method='post' action='/liblog'>
+            <input type="text" name='username' placeholder='Enter username'>
+            <input type='submit' value='Login'>
+        </form>
+    </p>
+</body>
+</html>

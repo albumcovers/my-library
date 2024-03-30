@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | My Library</title>
+    <link rel="stylesheet" href="https://classless.de/classless.css">
+    <style> .flex {display: flex; gap: 20px; align-items: center; } img { width: 150px; } a { color: inherit; text-decoration: none; } </style>
+</head>
+<body>
+    <a href='/'>
+        <button>
+            Back
+        </button>
+    </a>
+    <div class='flex'>
+        <img src='{{ image_link }}' style='height:500px;width:auto;'>
+        <div>
+            <h1>
+                {{ title }}
+            </h1>
+            <h3>
+                {{ author }}
+            </h3>
+            <span>
+                <b>Release Date: </b> {{ publish_date }}
+            </span>
+        </div>
+    </div>
+    <hr />
+    <p>
+        {{ summary }}
+    </p>
+    <hr />
+    <a href='/delete/{{ i }}'>
+        <button>
+            ⚠️ Delete This Book From Library ⚠️
+        </button>
+    </a>
+</body>
+</html>
